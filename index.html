@@ -169,15 +169,15 @@
       var email=document.getElementById('cidade').value||'--';
       var phone=document.getElementById('phone').value||'--';
       var msg=document.getElementById('message').value||'--';
-      return 'Olá, me chamo'+name+'Sou de'+cidade+'Mensagem:'+msg;
+      return 'Olá, me chamo '+name+'Sou de '+cidade+'Mensagem:'+msg;
     }
     function sendEmail(){
       var name=document.getElementById('name').value||'';
-      var email=document.getElementById('email').value||'';
+      var email=document.getElementById('cidade').value||'';
       var phone=document.getElementById('phone').value||'';
       var msg=document.getElementById('message').value||'';
       var subject = encodeURIComponent('Contato via site - Engenheira Carolina');
-      var body = encodeURIComponent('Nome: '+name+'%0AEmail: '+email+'%0ATelefone: '+phone+'%0A%0AMensagem:%0A'+msg);
+      var body = encodeURIComponent('Nome: '+name+'cidade: '+cidade+'ATelefone: '+phone+' Mensagem: '+msg);
       window.location.href = 'mailto:eng.carolgz@gmail.com?subject='+subject+'&body='+body;
     }
   </script>
